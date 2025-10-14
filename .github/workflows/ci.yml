@@ -1,6 +1,5 @@
 name: Node.js CI
 
-# Se ejecuta al hacer push o pull request a la rama main
 on:
   push:
     branches: ["main"]
@@ -24,4 +23,4 @@ jobs:
         run: npm install
 
       - name: "🧪 Ejecutar pruebas"
-        run: npm test
+        run: npx jest
